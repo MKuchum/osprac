@@ -11,9 +11,9 @@ signed main()
   if (pid == -1) {
     exit(1);
   } else if (pid == 0) {
-     printf("We are child, pid = %d\n", getpid());
+     printf("We are child, ppid = %d\n", getppid());
   } else {
-     printf("We are parent, ppid = %d\n", getppid());
+     printf("We are parent, pid = %d\n", getpid());
   }
 
   return 0;
