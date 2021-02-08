@@ -14,7 +14,7 @@ signed main()
     {
         printf("We are child, ppid = %d\n\n", getppid());
         printf("Now we will start \"3.c\"\n\n");
-        execl("3.c", "arg1", "arg2", "argKEK", "lastArg", NULL);
+        execl("./3", "arg1", "arg2", "argKEK", "lastArg", (char *)NULL);
     }
     else
     {
